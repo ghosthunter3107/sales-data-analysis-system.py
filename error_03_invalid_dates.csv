@@ -1,0 +1,6 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,region
+E301,P101,Enterprise Server Pro,Hardware,2026-02-30,5,1200.00,North America
+E302,P102,Cloud Storage Annual,Cloud Services,NOT-A-DATE,15,120.00,Europe
+E303,P103,AI Analytics Suite,Software,2026-13-45,8,450.00,Asia Pacific
+E304,P104,Cybersecurity Gateway,Security,,10,650.00,Latin America
+E305,P105,Developer Workstation,Hardware,yesterday,4,1850.00,North America

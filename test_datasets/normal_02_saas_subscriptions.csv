@@ -1,0 +1,11 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,region
+S201,P102,Cloud Storage Annual,Cloud Services,2026-02-01,25,120.00,North America
+S202,P103,AI Analytics Suite,Software,2026-02-05,15,450.00,Europe
+S203,P106,Database License Core,Software,2026-02-10,8,350.00,Asia Pacific
+S204,P102,Cloud Storage Annual,Cloud Services,2026-02-15,30,120.00,Latin America
+S205,P103,AI Analytics Suite,Software,2026-02-20,12,450.00,North America
+S206,P106,Database License Core,Software,2026-03-01,20,350.00,Europe
+S207,P102,Cloud Storage Annual,Cloud Services,2026-03-08,45,120.00,Asia Pacific
+S208,P103,AI Analytics Suite,Software,2026-03-14,18,450.00,Europe
+S209,P106,Database License Core,Software,2026-03-21,14,350.00,North America
+S210,P102,Cloud Storage Annual,Cloud Services,2026-03-29,50,120.00,Latin America

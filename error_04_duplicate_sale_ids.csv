@@ -1,0 +1,8 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,region
+DUP901,P101,Enterprise Server Pro,Hardware,2026-04-01,5,1200.00,North America
+DUP902,P102,Cloud Storage Annual,Cloud Services,2026-04-02,20,120.00,Europe
+DUP901,P101,Enterprise Server Pro,Hardware,2026-04-05,8,1200.00,North America
+DUP903,P103,AI Analytics Suite,Software,2026-04-08,12,450.00,Asia Pacific
+DUP901,P101,Enterprise Server Pro,Hardware,2026-04-12,10,1200.00,Latin America
+DUP902,P102,Cloud Storage Annual,Cloud Services,2026-04-15,25,120.00,Europe
+S1001,P101,Enterprise Server Pro,Hardware,2026-04-20,6,1200.00,North America

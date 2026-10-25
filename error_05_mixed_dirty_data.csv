@@ -1,0 +1,12 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,region
+MIX001,P101,Enterprise Server Pro,Hardware,2026-05-01,6,1200.00,North America
+MIX002,,Cloud Storage Annual,Cloud Services,2026-05-02,15,120.00,Europe
+MIX003,P103,AI Analytics Suite,Software,2026-05-03,10,450.00,Asia Pacific
+MIX004,P104,Cybersecurity Gateway,Security,2026-05-04,-4,650.00,Latin America
+MIX005,P105,Developer Workstation,Hardware,2026-05-05,8,1850.00,North America
+,P106,Database License Core,Software,2026-05-06,20,350.00,Europe
+MIX007,P101,Enterprise Server Pro,Hardware,2026-05-07,5,BAD_PRICE,North America
+MIX008,P102,Cloud Storage Annual,Cloud Services,2026-05-08,30,120.00,
+MIX009,P105,Developer Workstation,Hardware,2026-05-09,12,1850.00,Europe
+MIX010,P103,AI Analytics Suite,Software,INVALID_DATE,14,450.00,Asia Pacific
+MIX011,P104,Cybersecurity Gateway,Security,2026-05-11,9,650.00,North America

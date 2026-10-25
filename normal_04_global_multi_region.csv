@@ -1,0 +1,11 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,region
+GLB301,P101,Enterprise Server Pro,Hardware,2026-05-02,7,1200.00,North America
+GLB302,P102,Cloud Storage Annual,Cloud Services,2026-05-05,60,120.00,Europe
+GLB303,P103,AI Analytics Suite,Software,2026-05-11,20,450.00,Asia Pacific
+GLB304,P104,Cybersecurity Gateway,Security,2026-05-16,8,650.00,Latin America
+GLB305,P105,Developer Workstation,Hardware,2026-05-20,11,1850.00,Middle East
+GLB306,P106,Database License Core,Software,2026-05-25,18,350.00,North America
+GLB307,P101,Enterprise Server Pro,Hardware,2026-06-03,9,1200.00,Europe
+GLB308,P102,Cloud Storage Annual,Cloud Services,2026-06-10,75,120.00,Asia Pacific
+GLB309,P103,AI Analytics Suite,Software,2026-06-17,25,450.00,Latin America
+GLB310,P105,Developer Workstation,Hardware,2026-06-24,15,1850.00,Middle East

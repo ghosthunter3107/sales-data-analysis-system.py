@@ -1,0 +1,16 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,region
+ENT501,P101,Enterprise Server Pro,Hardware,2026-07-01,12,1200.00,North America
+ENT502,P102,Cloud Storage Annual,Cloud Services,2026-07-03,80,120.00,Europe
+ENT503,P103,AI Analytics Suite,Software,2026-07-06,22,450.00,Asia Pacific
+ENT504,P104,Cybersecurity Gateway,Security,2026-07-10,14,650.00,North America
+ENT505,P105,Developer Workstation,Hardware,2026-07-13,16,1850.00,Europe
+ENT506,P106,Database License Core,Software,2026-07-17,30,350.00,Latin America
+ENT507,P101,Enterprise Server Pro,Hardware,2026-07-20,8,1200.00,Asia Pacific
+ENT508,P102,Cloud Storage Annual,Cloud Services,2026-07-24,95,120.00,North America
+ENT509,P103,AI Analytics Suite,Software,2026-07-27,28,450.00,Europe
+ENT510,P105,Developer Workstation,Hardware,2026-07-31,18,1850.00,North America
+ENT511,P104,Cybersecurity Gateway,Security,2026-08-03,12,650.00,Latin America
+ENT512,P106,Database License Core,Software,2026-08-08,35,350.00,Europe
+ENT513,P101,Enterprise Server Pro,Hardware,2026-08-14,10,1200.00,North America
+ENT514,P102,Cloud Storage Annual,Cloud Services,2026-08-19,110,120.00,Asia Pacific
+ENT515,P105,Developer Workstation,Hardware,2026-08-25,20,1850.00,Europe

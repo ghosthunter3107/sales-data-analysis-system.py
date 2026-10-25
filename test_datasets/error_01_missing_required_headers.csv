@@ -1,0 +1,4 @@
+sale_id,product_id,product_name,category,quantity,unit_price
+ERR101,P101,Enterprise Server Pro,Hardware,5,1200.00
+ERR102,P102,Cloud Storage Annual,Cloud Services,10,120.00
+ERR103,P103,AI Analytics Suite,Software,8,450.00

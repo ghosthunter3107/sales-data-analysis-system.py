@@ -1,0 +1,7 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,region
+E201,P101,Enterprise Server Pro,Hardware,2026-03-01,-5,1200.00,North America
+E202,P102,Cloud Storage Annual,Cloud Services,2026-03-02,0,120.00,Europe
+E203,P103,AI Analytics Suite,Software,2026-03-03,4.5,450.00,Asia Pacific
+E204,P104,Cybersecurity Gateway,Security,2026-03-04,10,-500.00,Latin America
+E205,P105,Developer Workstation,Hardware,2026-03-05,6,INVALID_PRICE,North America
+E206,P106,Database License Core,Software,2026-03-06,TEN_UNITS,350.00,Europe

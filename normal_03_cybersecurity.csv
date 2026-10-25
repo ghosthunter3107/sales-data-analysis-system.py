@@ -1,0 +1,11 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,region
+SEC101,P104,Cybersecurity Gateway,Security,2026-03-01,5,650.00,North America
+SEC102,P104,Cybersecurity Gateway,Security,2026-03-07,8,650.00,Europe
+SEC103,P104,Cybersecurity Gateway,Security,2026-03-12,12,650.00,Asia Pacific
+SEC104,P104,Cybersecurity Gateway,Security,2026-03-19,6,650.00,Latin America
+SEC105,P104,Cybersecurity Gateway,Security,2026-03-25,9,650.00,North America
+SEC106,P104,Cybersecurity Gateway,Security,2026-04-02,15,650.00,Europe
+SEC107,P104,Cybersecurity Gateway,Security,2026-04-10,7,650.00,Asia Pacific
+SEC108,P104,Cybersecurity Gateway,Security,2026-04-18,10,650.00,Latin America
+SEC109,P104,Cybersecurity Gateway,Security,2026-04-24,14,650.00,North America
+SEC110,P104,Cybersecurity Gateway,Security,2026-04-30,11,650.00,Europe

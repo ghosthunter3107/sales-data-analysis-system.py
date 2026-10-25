@@ -1,0 +1,11 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,region
+H101,P101,Enterprise Server Pro,Hardware,2026-01-05,4,1200.00,North America
+H102,P105,Developer Workstation,Hardware,2026-01-12,8,1850.00,Europe
+H103,P101,Enterprise Server Pro,Hardware,2026-01-18,6,1200.00,Asia Pacific
+H104,P105,Developer Workstation,Hardware,2026-01-25,5,1850.00,North America
+H105,P101,Enterprise Server Pro,Hardware,2026-02-02,3,1200.00,Latin America
+H106,P105,Developer Workstation,Hardware,2026-02-14,7,1850.00,Europe
+H107,P101,Enterprise Server Pro,Hardware,2026-02-22,5,1200.00,North America
+H108,P105,Developer Workstation,Hardware,2026-03-05,10,1850.00,Asia Pacific
+H109,P101,Enterprise Server Pro,Hardware,2026-03-15,4,1200.00,Europe
+H110,P105,Developer Workstation,Hardware,2026-03-28,6,1850.00,North America
