@@ -7,12 +7,26 @@ specified in the MySQL schema.
 
 import sqlite3
 import os
+import shutil
 
-DEFAULT_DB_FILE = os.path.join(os.path.dirname(__file__), "sales_system.db")
+def get_target_db_file(db_file=None):
+    if db_file:
+        return db_file
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    orig_db = os.path.join(base_dir, "sales_system.db")
+    if os.getenv('VERCEL') or not os.access(base_dir, os.W_OK):
+        tmp_db = os.path.join('/tmp', 'sales_system.db')
+        if not os.path.exists(tmp_db) and os.path.exists(orig_db):
+            try:
+                shutil.copy2(orig_db, tmp_db)
+            except Exception as e:
+                print(f"[DB] Could not copy sales_system.db to /tmp: {e}")
+        return tmp_db
+    return orig_db
 
 def get_db_connection(db_file=None):
     """Returns an active SQLite database connection with row factory enabled."""
-    target_db = db_file if db_file else DEFAULT_DB_FILE
+    target_db = get_target_db_file(db_file)
     conn = sqlite3.connect(target_db)
     conn.row_factory = sqlite3.Row
     return conn

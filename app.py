@@ -13,10 +13,14 @@ from database import init_db, save_sales_records, get_all_records, clear_all_sal
 from analysis import validate_sales_csv, analyze_sales_records, generate_matplotlib_charts
 import test_sales_analysis
 
-app = Flask(__name__, static_folder=".", static_url_path="")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+app = Flask(__name__, static_folder=BASE_DIR, static_url_path="")
 
-# Ensure database is initialized
-init_db()
+# Ensure database is initialized safely
+try:
+    init_db()
+except Exception as e:
+    print(f"[Init] Database init notice: {e}")
 
 # Keep track of latest upload report in server memory
 latest_import_report = {
@@ -34,13 +38,16 @@ latest_import_report = {
 }
 
 # Auto-seed sample data if empty
-existing = get_all_records()
-if not existing:
-    sample_csv_path = os.path.join(os.path.dirname(__file__), "sample_sales_data.csv")
-    if os.path.exists(sample_csv_path):
-        val = validate_sales_csv(sample_csv_path)
-        if val["valid_rows"]:
-            save_sales_records(val["valid_rows"], duplicate_policy="SKIP")
+try:
+    existing = get_all_records()
+    if not existing:
+        sample_csv_path = os.path.join(BASE_DIR, "sample_sales_data.csv")
+        if os.path.exists(sample_csv_path):
+            val = validate_sales_csv(sample_csv_path)
+            if val["valid_rows"]:
+                save_sales_records(val["valid_rows"], duplicate_policy="SKIP")
+except Exception as e:
+    print(f"[Init] Seed notice: {e}")
 
 def is_database_sample_only():
     """Checks whether the database currently holds only the original demo sample records."""
@@ -55,7 +62,7 @@ def is_database_sample_only():
 
 @app.route("/")
 def index():
-    return send_file("index.html")
+    return send_file(os.path.join(BASE_DIR, "index.html"))
 
 @app.route("/api/summary", methods=["GET"])
 def get_summary():
@@ -161,7 +168,7 @@ def upload_csv():
     all_recs = get_all_records()
     analysis = analyze_sales_records(all_recs)
 
-    # Optional: generate matplotlib charts
+    # Optional: generate matplotlib charts safely
     try:
         generate_matplotlib_charts(all_recs)
     except Exception as e:
@@ -203,7 +210,7 @@ def get_latest_report():
 def reset_sample_data():
     """Resets database back to default verified sample sales records."""
     clear_all_sales()
-    sample_csv_path = os.path.join(os.path.dirname(__file__), "sample_sales_data.csv")
+    sample_csv_path = os.path.join(BASE_DIR, "sample_sales_data.csv")
     if os.path.exists(sample_csv_path):
         val = validate_sales_csv(sample_csv_path)
         if val["valid_rows"]:
